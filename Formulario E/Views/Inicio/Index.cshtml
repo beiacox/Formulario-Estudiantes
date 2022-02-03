@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>FORMULARIO DE REGISTRO DE ESTUDIANTES DEL ITLA</h2>
+<head>
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+    <div>
+        <form action="Inicio/Vestudiantes" method="post">
+            <label>matricula:           <input type="text" name="matricula" /></label><br />
+            <label>nombres:             <input type="text" name="nombre" /></label><br />
+            <label>apellidos:           <input type="text" name="apellidos" /></label><br />
+            <label>fecha de nacimineto: <input type="date" name="nacimiento" /></label><br />
+            <label>carrera:             <input type="text" name="carrera" /></label><br />
+            <label>direccion:           <input type="text" name="direccion" /></label><br />
+            <label>numero telefonico:   <input type="tel" name="telefono" /></label><br />
+            <label>correo electronico:  <input type="email" name="correo" /></label><br />
+            <label for="cars">Tipo de exportacion:
+            <select id="type" name="type">
+                <option value="json">Archivo json</option>
+                <option value="txt">Archivo de texto</option>
+                <option value="excel">Hoja de calculo excel</option>
+            </select></label>
+            <input type="submit" name="enviar" value="enviar" />
+        </form>
+    </div>
+</body>
